@@ -51,7 +51,9 @@
     - [Install Postman CLI](https://learning.postman.com/docs/postman-cli/postman-cli-installation/)
     - [Not Recommended] [Install Newman CLI](https://www.npmjs.com/package/newman)
     - [Not Recommended] [VS Code Plugin](https://marketplace.visualstudio.com/items?itemName=Postman.postman-for-vscode)
-
+- Docker Hoppscotch CLI
+    - https://github.com/Gary-Ascuy/hoppscotch-cli-docker
+    - https://hub.docker.com/r/garyascuy/hoppscotch-cli/tags
 
 ## Versions
 
