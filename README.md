@@ -53,7 +53,7 @@
     - [Not Recommended] [VS Code Plugin](https://marketplace.visualstudio.com/items?itemName=Postman.postman-for-vscode)
 - Docker Hoppscotch CLI
     - https://github.com/Gary-Ascuy/hoppscotch-cli-docker
-    - https://hub.docker.com/r/garyascuy/hoppscotch-cli/tags
+    - https://hub.docker.com/r/garyascuy/hoppscotch-cli
 
 ## Versions
 
