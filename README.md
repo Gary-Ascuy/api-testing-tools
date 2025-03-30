@@ -51,3 +51,17 @@
     - [Install Postman CLI](https://learning.postman.com/docs/postman-cli/postman-cli-installation/)
     - [Not Recommended] [Install Newman CLI](https://www.npmjs.com/package/newman)
     - [Not Recommended] [VS Code Plugin](https://marketplace.visualstudio.com/items?itemName=Postman.postman-for-vscode)
+
+
+## Versions
+
+- HOPPSCOTCH Desktop
+    - Version 25.3.0 (20250328.142950)
+- HOPPSCOTCH CLI
+    - `hopp --ver` - 0.20.3
+- POSTMAN Desktop
+    - Version 11.38.7
+    - UI Version: 11.38.7-ui-250328-1229
+    - Desktop Platform Version: 11.38.5 (11.38.5)
+- POSTMAN CLI 
+    - `postman --version` - 1.13.1
