@@ -1,5 +1,15 @@
 # API Testing Tools
 
+## Alternatives
+
+- Hoppscotch (AKA Postwoman) - https://hoppscotch.io/
+- Postman - https://www.postman.com/
+- Insomnia - https://insomnia.rest/
+- Bruno - https://www.usebruno.com/
+- SoapUI -  https://www.soapui.org/
+- Thunder Client - https://www.thunderclient.com/
+- Etc ...
+
 ## Sumary
 
 | Feature                | Hoppscotch         | Postman            |
