@@ -1,0 +1,125 @@
+{
+  "v": 6,
+  "name": "ApiMigrationUseCase",
+  "folders": [
+    {
+      "v": 6,
+      "name": "SearchFeature",
+      "folders": [],
+      "requests": [
+        {
+          "v": "11",
+          "name": "Search",
+          "method": "POST",
+          "endpoint": "<<Url>>/post",
+          "params": [
+            {
+              "key": "search",
+              "value": "raichu",
+              "active": true,
+              "description": ""
+            }
+          ],
+          "headers": [
+            {
+              "key": "x-gary-testing",
+              "value": "info",
+              "active": true,
+              "description": ""
+            },
+            {
+              "key": "Content-Type",
+              "value": "",
+              "active": true,
+              "description": ""
+            }
+          ],
+          "preRequestScript": "",
+          "testScript": "const isDeepEqual = (object1, object2) => {\n\n  const objKeys1 = Object.keys(object1);\n  const objKeys2 = Object.keys(object2);\n\n  if (objKeys1.length !== objKeys2.length) return false;\n\n  for (var key of objKeys1) {\n    const value1 = object1[key];\n    const value2 = object2[key];\n\n    const isObjects = isObject(value1) && isObject(value2);\n\n    if ((isObjects && !isDeepEqual(value1, value2)) ||\n      (!isObjects && value1 !== value2)\n    ) {\n      return false;\n    }\n  }\n  return true;\n};\n\nconst isObject = (object) => {\n  return object != null && typeof object === \"object\";\n};\n\npw.test(\"Status code is 200\", () => {\n  pw.expect(pw.response.status).toBe(200);\n});\n\npw.test(\"Check JSON response property args\", () => {\n  const isEqual = isDeepEqual(pw.response.body.args, {\n    \"search\": \"raichu\"\n  });\n  pw.expect(isEqual).toBe(true);\n});\n\npw.test(\"Check JSON response property data\", () => {\n  const isEqual = isDeepEqual(pw.response.body.data, {\n    \"lastName\": \"Ascuy Anturiano\",\n    \"name\": \"Gary\"\n  });\n  pw.expect(isEqual).toBe(true);\n});\n",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n  \"name\": \"Gary\",\n  \"lastName\": \"Ascuy Anturiano\"\n}"
+          },
+          "requestVariables": [],
+          "responses": {}
+        }
+      ],
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "headers": [],
+      "_ref_id": "coll_m8v6kxqk_eb1180b8-c058-4b9e-b892-8c19e9612459"
+    },
+    {
+      "v": 6,
+      "name": "UpdateFeature",
+      "folders": [],
+      "requests": [
+        {
+          "v": "11",
+          "name": "Update",
+          "method": "PUT",
+          "endpoint": "<<Url>>/put",
+          "params": [
+            {
+              "key": "limit",
+              "value": "50",
+              "active": true,
+              "description": ""
+            },
+            {
+              "key": "skip",
+              "value": "30",
+              "active": true,
+              "description": ""
+            },
+            {
+              "key": "provider",
+              "value": "Gary",
+              "active": true,
+              "description": ""
+            }
+          ],
+          "headers": [
+            {
+              "key": "Cookie",
+              "value": "sails.sid=s%3AdSq6wRnMgExqOwUnzgNyzPll2sqADj9y.XK7m5%2FK4iU5n4SMekF6%2B3X9dsxrzE4U0KWebIbz8jgY",
+              "active": true,
+              "description": ""
+            }
+          ],
+          "preRequestScript": "",
+          "testScript": "pw.test(\"Status code is 200\", () => {\n    pw.expect(pw.response.status).toBe(200);\n});\n\npw.test(\"Check JSON response property args\", () => {\n    pw.expect(pw.response.body.args.limit).toBe(\"50\");\n    pw.expect(pw.response.body.args.provider).toBe(\"Gary\");\n    pw.expect(pw.response.body.args.skip).toBe(\"30\");\n});\n\npw.test(\"Check JSON response property args\", () => {\n    pw.expect(pw.response.body.data.name).toBe(\"Gary Ascuy\");\n});\n\n",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n  \"name\": \"Gary Ascuy\"\n}"
+          },
+          "requestVariables": [],
+          "responses": {}
+        }
+      ],
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "headers": [],
+      "_ref_id": "coll_m8v6lde9_6c614880-b11f-4a70-b9a8-2fea027022c0"
+    }
+  ],
+  "requests": [],
+  "auth": {
+    "authActive": true,
+    "authType": "none"
+  },
+  "headers": [],
+  "_ref_id": "coll_m8v6kp8b_895c6ea0-d9fb-4865-8b43-d02801aaa1e4"
+}
