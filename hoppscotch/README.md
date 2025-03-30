@@ -1,6 +1,7 @@
 # Hoppscotch CLI
 
-Requirements (it has a lot of issues to install)
+#### Requirements (issues & constraints)
+
 - Python >= v3.12
 - clang, clang++, and make
 - Node v20
@@ -21,7 +22,8 @@ hopp test --env ./env/Echov2-Hoppscotch.env.json ./collection/ApiMigrationUseCas
 
 # Hoppscotch Docker
 
-Requirements 
+#### Requirements
+
 - Docker
 
 Download Image
