@@ -2,7 +2,7 @@
 
 ## Alternatives
 
-- Hoppscotch (AKA Postwoman) - https://hoppscotch.io/
+- Hoppscotch (AKA Postwoman) - https://hoppscotch.io/ | https://postwoman.io/
 - Postman - https://www.postman.com/
 - Insomnia - https://insomnia.rest/
 - Bruno - https://www.usebruno.com/
