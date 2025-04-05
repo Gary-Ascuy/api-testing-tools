@@ -1,0 +1,48 @@
+meta {
+  name: Update
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{url}}/put?limit=50&skip=30&provider=Gary
+  body: json
+  auth: none
+}
+
+params:query {
+  limit: 50
+  skip: 30
+  provider: Gary
+}
+
+body:json {
+  {
+      "name": "Gary Ascuy"
+  }
+}
+
+tests {
+  test("Status code is 200", () => {
+      expect(res.getStatus()).to.equal(200);
+  });
+  
+  test("Body should be object", () => {
+      const jsonData = res.getBody();
+      expect(jsonData).instanceOf(Object);
+  });
+  
+  test("Body should contains key fields with right values", () => {
+      const jsonData = res.getBody();
+  
+      expect(jsonData.args).to.deep.equals({
+          "limit": "50",
+          "skip": "30",
+          "provider": "Gary"
+      });
+  
+      expect(jsonData.data).to.deep.equals({
+          "name": "Gary Ascuy"
+      });
+  });
+}

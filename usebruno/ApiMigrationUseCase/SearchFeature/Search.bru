@@ -1,0 +1,56 @@
+meta {
+  name: Search
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{url}}/post?search=raichu
+  body: json
+  auth: none
+}
+
+params:query {
+  search: raichu
+}
+
+headers {
+  content-type: application/json
+  x-gary-testing: info
+}
+
+body:json {
+  {
+    "name": "Gary",
+    "lastName": "Ascuy Anturiano"
+  }
+}
+
+assert {
+  res.body.args.search: eq raichu
+}
+
+tests {
+  test("Status code is 200", () => {
+      expect(res.getStatus()).to.equal(200);
+  });
+  
+  test("Content-Type is present", () => {
+      expect(Object.keys(res.getHeaders())).to.include("content-type");
+  });
+  
+  test("Response should be JSON", () => {
+      const contentType = res.getHeader("content-type");
+      expect(contentType).to.match(/application\/json/i);
+  });
+  
+  test("Body should contains key fields with right values", () => {
+      const data = res.getBody();
+      expect(data.args.search).to.equals("raichu");
+      expect(data.data).to.deep.equals({
+          "name": "Gary",
+          "lastName": "Ascuy Anturiano"
+      });
+  });
+  
+}
