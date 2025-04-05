@@ -4,24 +4,25 @@
 
 - Hoppscotch (AKA Postwoman) - https://hoppscotch.io/ | https://postwoman.io/
 - Postman - https://www.postman.com/
-- Insomnia - https://insomnia.rest/
 - Bruno - https://www.usebruno.com/
+- Insomnia - https://insomnia.rest/
 - SoapUI -  https://www.soapui.org/
 - Thunder Client - https://www.thunderclient.com/
 - Etc ...
 
 ## Sumary
 
-| Feature                | Hoppscotch         | Postman            |
-| ---                    | :---:              | :---:              |
-| Open Source            | :white_check_mark: | :x:                |
-| Web App - PWA          | :white_check_mark: | :white_check_mark: |
-| Desktop App            | :white_check_mark: | :white_check_mark: |
-| VS Code Extension      | :x:                | :white_check_mark: |
-| Command Line Interface | :white_check_mark: | :white_check_mark: |
-| Test Snippets          | :white_check_mark: | :white_check_mark: |
-| AI Test Generator      | :x:                | :white_check_mark: |
-| Load Testing           | :white_check_mark: | :white_check_mark: |
+| Feature                | Hoppscotch         | Postman            | Bruno              |
+| ---                    | :---:              | :---:              | :---:              |
+| Open Source            | :white_check_mark: | :x:                | :white_check_mark: |
+| Web App - PWA          | :white_check_mark: | :white_check_mark: | :x:                |
+| Desktop App            | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| VS Code Extension      | :x:                | :white_check_mark: | :white_check_mark: |
+| Command Line Interface | :white_check_mark: | :white_check_mark: | :white_check_mark: | 
+| Test Snippets          | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| AI Test Generator      | :x:                | :white_check_mark: | :x:                |
+| Load Testing           | :white_check_mark: | :white_check_mark: | :x:                |
+| Git Friendly           | :x:                | :x:                | :white_check_mark: |
 
 ## Hoppscotch (AKA Postwoman)
 
