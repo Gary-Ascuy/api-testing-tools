@@ -65,7 +65,7 @@
     - [Getting Started](https://docs.usebruno.com/introduction/what-is-bruno)
 - Downloads & Install
     - [Download Desktop App](https://www.usebruno.com/downloads)
-    - [Install Postman CLI](https://www.npmjs.com/package/@usebruno/cli)
+    - [Install Bruno CLI](https://www.npmjs.com/package/@usebruno/cli)
 
 ## Conclusion (According to Gemini)
 
