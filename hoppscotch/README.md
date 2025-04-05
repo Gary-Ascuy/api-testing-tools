@@ -8,6 +8,10 @@
 - node-gyp - https://github.com/nodejs/node-gyp
 - hopp - `npm i -g @hoppscotch/cli`
 
+```sh
+cd hoppscotch/
+```
+
 #### Run CLI for Version 1 - Postman
 
 ```sh
@@ -47,4 +51,10 @@ dhopp test --env ./env/Echov1-Postman.env.json ./collection/ApiMigrationUseCase.
 
 ```sh
 dhopp test --env ./env/Echov2-Hoppscotch.env.json ./collection/ApiMigrationUseCase.json
+```
+
+#### Useful Commands 
+```sh
+hopp --help 
+hopp test  --help 
 ```

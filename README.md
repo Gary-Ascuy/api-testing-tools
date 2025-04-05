@@ -55,6 +55,17 @@
     - [Not Recommended] [Install Newman CLI](https://www.npmjs.com/package/newman)
     - [Not Recommended] [VS Code Plugin](https://marketplace.visualstudio.com/items?itemName=Postman.postman-for-vscode)
 
+## Bruno 
+
+#### References 
+
+- https://www.usebruno.com 
+- Price & Docs
+    - [Pricing](https://www.usebruno.com/pricing)
+    - [Getting Started](https://docs.usebruno.com/introduction/what-is-bruno)
+- Downloads & Install
+    - [Download Desktop App](https://www.usebruno.com/downloads)
+    - [Install Postman CLI](https://www.npmjs.com/package/@usebruno/cli)
 
 ## Conclusion (According to Gemini)
 
